@@ -1,6 +1,6 @@
 # GitHub API
 
-Fluent GitHub API generated from OpenAPI spec using [Stainless](https://github.com/stainless-api) with modifications
+Fluent GitHub API generated using [Stainless](https://github.com/stainless-api) with modifications
 
 ## Installation
 

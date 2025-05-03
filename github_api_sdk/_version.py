@@ -1,0 +1,5 @@
+__title__ = "github_api_sdk"
+__version__ = "0.0.1"
+__description__ = "GitHub API"
+__author__ = "Trevor Hobenshield"
+__license__ = "MIT"

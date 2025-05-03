@@ -1,0 +1,54 @@
+
+
+from __future__ import annotations
+
+from typing import Union
+from typing_extensions import TypeAlias
+
+from .repository_rule_update_param import RepositoryRuleUpdateParam
+from .repository_rule_creation_param import RepositoryRuleCreationParam
+from .repository_rule_deletion_param import RepositoryRuleDeletionParam
+from .repository_rule_workflows_param import RepositoryRuleWorkflowsParam
+from .repository_rule_merge_queue_param import RepositoryRuleMergeQueueParam
+from .repository_rule_pull_request_param import RepositoryRulePullRequestParam
+from .repository_rule_code_scanning_param import RepositoryRuleCodeScanningParam
+from .repository_rule_max_file_size_param import RepositoryRuleMaxFileSizeParam
+from .repository_rule_non_fast_forward_param import RepositoryRuleNonFastForwardParam
+from .repository_rule_tag_name_pattern_param import RepositoryRuleTagNamePatternParam
+from .repository_rule_branch_name_pattern_param import RepositoryRuleBranchNamePatternParam
+from .repository_rule_required_signatures_param import RepositoryRuleRequiredSignaturesParam
+from .repository_rule_max_file_path_length_param import RepositoryRuleMaxFilePathLengthParam
+from .repository_rule_required_deployments_param import RepositoryRuleRequiredDeploymentsParam
+from .repository_rule_file_path_restriction_param import RepositoryRuleFilePathRestrictionParam
+from .repository_rule_commit_message_pattern_param import RepositoryRuleCommitMessagePatternParam
+from .repository_rule_required_status_checks_param import RepositoryRuleRequiredStatusChecksParam
+from .repository_rule_committer_email_pattern_param import RepositoryRuleCommitterEmailPatternParam
+from .repository_rule_required_linear_history_param import RepositoryRuleRequiredLinearHistoryParam
+from .repository_rule_file_extension_restriction_param import RepositoryRuleFileExtensionRestrictionParam
+from .repository_rule_commit_author_email_pattern_param import RepositoryRuleCommitAuthorEmailPatternParam
+
+__all__ = ["RepositoryRuleParam"]
+
+RepositoryRuleParam: TypeAlias = Union[
+    RepositoryRuleCreationParam,
+    RepositoryRuleUpdateParam,
+    RepositoryRuleDeletionParam,
+    RepositoryRuleRequiredLinearHistoryParam,
+    RepositoryRuleMergeQueueParam,
+    RepositoryRuleRequiredDeploymentsParam,
+    RepositoryRuleRequiredSignaturesParam,
+    RepositoryRulePullRequestParam,
+    RepositoryRuleRequiredStatusChecksParam,
+    RepositoryRuleNonFastForwardParam,
+    RepositoryRuleCommitMessagePatternParam,
+    RepositoryRuleCommitAuthorEmailPatternParam,
+    RepositoryRuleCommitterEmailPatternParam,
+    RepositoryRuleBranchNamePatternParam,
+    RepositoryRuleTagNamePatternParam,
+    RepositoryRuleFilePathRestrictionParam,
+    RepositoryRuleMaxFilePathLengthParam,
+    RepositoryRuleFileExtensionRestrictionParam,
+    RepositoryRuleMaxFileSizeParam,
+    RepositoryRuleWorkflowsParam,
+    RepositoryRuleCodeScanningParam,
+]
